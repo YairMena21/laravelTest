@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=10, user-scalble=no">
+
+        <!-- <link rel="manifest" href="manifest.json"> -->
 
         <title>Laravel</title>
 
@@ -19,6 +22,13 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
+
+<link rel="manifest" src="{{asset('js/manifest.json')}}">
+
+<script src="{{asset('js/app.js')}}" defer></script>
+<script src="{{asset('js/main.js')}}" defer></script>
+<script src="{{asset('js/sw.js')}}" defer></script>
+
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">

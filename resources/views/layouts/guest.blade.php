@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
+
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
@@ -12,7 +13,13 @@
 
         <!-- Scripts -->
         <link rel="stylesheet" href="{{asset('/css/app.css')}}">
-        <script href="{{asset('/js/app.js')}}" defer></script>
+        
+        <link rel="manifest" src="{{asset('js/manifest.json')}}">
+
+        <script src="{{asset('js/app.js')}}" defer></script>
+        <script src="{{asset('js/main.js')}}" defer ></script>
+        <script src="{{asset('js/sw.js')}}" defer></script>
+
         {{--  @vite(['resources/css/app.css', 'resources/js/app.js'])  --}}
     </head>
     <body>
