@@ -18,12 +18,12 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Scripts -->
-        <link rel="stylesheet" src="{{asset('/css/app.css')}}">
-        <link rel="manifest" src="{{asset('js/manifest.json')}}">
+        <link rel="stylesheet" src="{{asset('./css/app.css')}}">
+        <link rel="manifest" src="{{asset('./public/js/manifest.json')}}" defer>
 
-        <script src="{{asset('js/app.js')}}" defer></script>
-        <script src="{{asset('js/main.js')}}" defer></script>
-        <script src="{{asset('js/sw.js')}}" defer></script>
+        <script src="{{asset('./public/js/app.js')}}" defer></script>
+        <script src="{{asset('./public/js/main.js')}}" defer ></script>
+        <script src="{{asset('./public/js/sw.js')}}" defer></script>
 
         {{--  @vite(['resources/css/app.css', 'resources/js/app.js'])  --}}
     </head>

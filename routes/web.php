@@ -1,6 +1,12 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\ConfirmadoController;
+use App\Http\Controllers\EstadoController;
+use App\Http\Controllers\DefuncionesController;
+use App\Http\Controllers\GraficasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +28,11 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+Route::get('/graficas',[GraficasController::class, 'casosTotales'])->name('graficas');;
+Route::get('/estado/getEstados', [EstadoController::class, 'getEstados']);
+
+Route::resource('/estado', EstadoController::class);
+Route::resource('/confirmado', ConfirmadoController::class);
+Route::resource('/defunciones', DefuncionesController::class);
+
+

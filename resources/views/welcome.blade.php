@@ -4,6 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=10, user-scalble=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=10, user-scalble=no">
+    <meta name="theme-color" content="#10161F">
+    <meta name="movileOptimized" content="width">
+    <meta name="handhelFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
         <!-- <link rel="manifest" href="manifest.json"> -->
 
@@ -23,11 +29,11 @@
             }
         </style>
 
-<link rel="manifest" src="{{asset('js/manifest.json')}}">
+<link rel="manifest" src="{{asset('/js/manifest.json')}}">
 
-<script src="{{asset('js/app.js')}}" defer></script>
-<script src="{{asset('js/main.js')}}" defer></script>
-<script src="{{asset('js/sw.js')}}" defer></script>
+        <!-- <script src="{{asset('public/js/app.js')}}" ></script> -->
+        <script src="{{asset('/js/main.js')}}"  ></script>
+        <script src="{{asset('/js/sw.js')}}" ></script>
 
     </head>
     <body class="antialiased">
